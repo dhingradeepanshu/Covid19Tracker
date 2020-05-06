@@ -98,7 +98,7 @@ function display_data(data){
     if (myChart4) {
       myChart4.destroy();
     }
-    axios.post('http://localhost:3000/region/world',{world:"world"})
+    axios.post('/region/world',{world:"world"})
             .then(res => {
               console.log(res.data);
               document.getElementById("error").innerHTML="";

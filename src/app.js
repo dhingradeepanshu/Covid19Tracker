@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const bp=require('body-parser')
 
 const app = express()
-
+const port = process.env.PORT || 3000
 const post=bp.urlencoded({extended:false});
 app.use(bp.json());
 
@@ -161,6 +161,6 @@ app.post('/region/:id',post, (req,res) => {
 })
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server side js is up running.')
 })
