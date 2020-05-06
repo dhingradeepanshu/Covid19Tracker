@@ -22,7 +22,7 @@ function display_tables(city)
 function display_state_data(data){
   if(data.msg=="Error Message")
   {
-    console.log("true");
+    // console.log("true");
     hide_everything();
     if (myChart1) {
       myChart1.destroy();
